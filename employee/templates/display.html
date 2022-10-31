@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                border:2px solid Black;
+                padding:20px;
+                margin:20px;
+            }
+            h1{
+                text-align:center;
+            }
+            th,td{
+                border: 1px solid black;
+                text-align: left;
+                padding: 8px;
+            }
+            a{
+                border:1px solid black;
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Employ details</h1>
+        <table>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Employee Salary</th>
+                <th>Address</th>
+                <th>Update or delete</th>
+            </tr>
+            {% for data in context %}
+            <tr>
+                <td>{{data.Employee_ID}}</td>
+                <td>{{data.Employee_Name}}</td>
+                <td>{{data.Employee_Salary}}</td>
+                <td>{{data.Address}}</td>
+                <td><a href="../{{data.Employee_ID}}/update">Update/</a>
+                    <a href="../{{data.Employee_ID}}/del5ete">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="http://127.0.0.1:8000/employee/insert">Add new employ information</a>
+        <a href="http://127.0.0.1:8000/employee">Home</a>
+    </body>
+</html>
