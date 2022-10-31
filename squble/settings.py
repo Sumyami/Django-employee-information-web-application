@@ -34,20 +34,12 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'employee.apps.EmployeeConfig',
     'item.apps.ItemConfig',
-    'BookOnline',
-    'bus.apps.BusConfig',
-    'blogapp.apps.BlogappConfig',
-    'polls.apps.PollsConfig',
-    'store.apps.StoreConfig',
-    'sam.apps.SamConfig',
-    'poll.apps.PollConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'books.apps.BooksConfig',
 ]
 
 MIDDLEWARE = [
